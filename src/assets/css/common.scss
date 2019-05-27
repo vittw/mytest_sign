@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0px;
+    font-size: 12px;
+}
+ol, ul {
+    list-style: none;
+}
+span{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+//承包区
+.a_outBox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #F5F5F5;
+    box-sizing: border-box;
+    .a_content{
+        width: 100%;
+        flex: 1;
+        overflow: auto;
+        h1{
+            width: 100%;
+        }
+    }
+}
+//头部公共样式
+.header{
+    width: 100%;
+    box-sizing: border-box;
+    height: 46px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   .van-nav-bar{
+        width: 100%;
+        height: 46px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        box-sizing: border-box;
+        .van-nav-bar__left{
+            bottom: 0px !important;
+            box-sizing: border-box;
+            div{
+                box-sizing: border-box;
+                .back{
+                    display: inline-block;
+                    width: 19px;
+                    height: 17px;
+                    background: url(../img/back_copy@2x.png) no-repeat center center;
+                    background-size: 100% auto; 
+                }
+                .close{
+                    display: inline-block;
+                    width: 19px;
+                    height: 17px;
+                    background: url(../img/fork@3x.png) no-repeat center center;
+                    background-size: 100% auto;
+                }
+            }
+            
+        }
+        .van-nav-bar__right{
+            box-sizing: border-box;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            .right{
+                box-sizing: border-box;
+                width: 19px;
+                .search{
+                    display: inline-block;
+                    width: 19px;
+                    height: 17px;
+                    background: url(../img/nav_search@2x.png) no-repeat center center;
+                    background-size: 100% auto;
+                    margin-right: 16px;
+                }
+            }
+            
+        }
+    } 
+}
+//中间打招呼的部分和时间
+.a_hello{
+    width: 100%;
+    height: 47px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #E8E8E8;
+    padding: 0px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    .ah_left{
+        font-size: 16px;
+        color: #333333;
+        font-weight: 600;
+        font-family:PingFangSC-Medium;
+    }
+    .ah_right{
+        color: #666666;
+        font-size: 12px;
+        height: 47px;
+        display: flex;
+        align-items: center;
+        .ah_time{
+            margin-right: 4px;
+        }
+        .ah_timeImg{
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background: url(../img/Triangle@2x.png) no-repeat center center;
+            background-size: 100% auto;
+        }
+    }
+}
+//图表
+.a_chart{
+    width: 100%;
+//  height: 379px;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    padding: 0px 16px;
+}
+.a_chart .ah_number{
+    height: 79px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .num_left,.num_right{
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .num_title{
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-direction: column;
+            .num_littleTitle{
+                color: #666666;
+                font-size: 12px;
+            }
+            .num_value{
+                font-size: 18px;
+                font-size: 800;
+                color: #333333;
+            }
+        }
+    }
+    .num_left{
+        .num_img{
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background: url(../img/pic_1@2x.png) no-repeat center center;
+            background-size: 100% auto;
+            margin-right: 4px;
+        }
+    }
+    .num_right{
+        .num_img{
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background: url(../img/pic_2@2x.png) no-repeat center center;
+            background-size: 100% auto;
+            margin-right: 4px;
+        }
+    }
+}
+.a_chart .chart_chart{
+    width: 100%;
+    box-sizing: border-box;
+//  height: 300px;
+}
+.a_chart .chart_update{
+    height: 50px;
+    width: 100%;
+    color: #999999;
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//业务员排序
+.a_index{
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+}
+.a_index .ai_chartTitle{
+    box-sizing: border-box;
+    width: 100%;
+    height: 47px;
+    border-bottom: 1px solid #E8E8E8;
+    padding: 0px 16px;
+    justify-content: flex-end;
+    justify-content: flex-start;
+    align-items: center;
+    span{
+        display: inline-block;
+        height: 47px;
+        line-height: 47px;
+        font-size: 14px;
+        color: #999999;
+    }
+    
+}
+
+
+.van-list{
+    .van-cell:nth-child(1){
+        .van-cell__title,.van-cell__value{
+            color: #F93A30;
+        }
+        
+    }
+    .van-cell:nth-child(2){
+        .van-cell__title,.van-cell__value{
+            color: #FE7621;
+        }
+        
+    }
+    .van-cell:nth-child(3){
+        .van-cell__title,.van-cell__value{
+            color: #0085FF;
+        }
+    }
+}
