@@ -1,9 +1,8 @@
 {
-  "name": "sign",
+  "name": "mytest_sign",
   "version": "1.0.0",
   "description": "A Vue.js project",
   "author": "wtt",
-  "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
